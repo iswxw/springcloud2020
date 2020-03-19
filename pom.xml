@@ -6,7 +6,11 @@
   <groupId>com.wxw</groupId>
   <artifactId>springcloud2020</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <modules>
+        <module>cloud-server-pay8001</module>
+        <module>cloud-server-order8002</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <!-- 统一管理jar包版本 -->
     <properties>
@@ -84,6 +88,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>Spring Cloud 2020的maven插件</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
