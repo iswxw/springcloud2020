@@ -8,27 +8,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>cloud-server-order8002</artifactId>
+
+    <artifactId>cloud-server-common</artifactId>
 
     <dependencies>
-
-        <!--引入自定义的common通用包 提供使用实体-->
-        <dependency>
-            <groupId>com.wxw</groupId>
-            <artifactId>cloud-server-common</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -41,13 +24,12 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
+         <!--hutool工具包-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.1.0</version>
         </dependency>
-
     </dependencies>
 
 </project>

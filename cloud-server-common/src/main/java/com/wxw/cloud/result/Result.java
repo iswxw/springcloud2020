@@ -1,4 +1,4 @@
-package com.wxw.cloud.common;
+package com.wxw.cloud.result;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
