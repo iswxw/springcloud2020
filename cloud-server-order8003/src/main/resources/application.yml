@@ -1,0 +1,14 @@
+server:
+  port: 8003
+
+spring:
+  application:
+    name: cloud-consumer-order8003
+  cloud:
+    zookeeper:
+      #注册到zookeeper的地址
+      connect-string: 47.101.141.168:2181
+
+
+
+

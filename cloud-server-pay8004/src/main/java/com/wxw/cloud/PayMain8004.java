@@ -3,18 +3,18 @@ package com.wxw.cloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @Author: wxw
- * @create: 2020-03-19-16:48
- * 支付模块入口
+ * @create: 2020-03-21-16:34
  */
-@EnableEurekaClient
+
+//用于向使用consul或zookeeper作为注册中心注册服务
 @EnableDiscoveryClient
 @SpringBootApplication
-public class PayMent8001 {
+public class PayMain8004 {
     public static void main(String[] args) {
-        SpringApplication.run(PayMent8001.class, args);
+        SpringApplication.run(PayMain8004.class, args);
     }
+
 }

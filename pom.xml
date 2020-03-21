@@ -10,6 +10,10 @@
         <module>cloud-server-pay8001</module>
         <module>cloud-server-order8002</module>
         <module>cloud-server-common</module>
+        <module>cloud-server-eureka7001</module>
+        <module>cloud-server-pay8004</module>
+        <module>cloud-server-order8005</module>
+        <module>cloud-server-order8003</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,0 +1,8 @@
+（1） eureka
+     cloud-server-eureka7001
+     cloud-server-order8002   consumer
+     cloud-server-pay8001     provider
+
+（2）zookeeper
+    cloud-server-order8003   consumer
+    cloud-server-pay8004     provider

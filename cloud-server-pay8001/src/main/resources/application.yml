@@ -11,7 +11,26 @@ spring:
     username: root
     password: 123456
 
-# mybatis 整合
-  mybatis:
-    mapperLocations: classpath:mapper/*.xml
-    type-aliases-package: com.wxw.cloud.domain    # 所有的实体别名类所在的包
+#eureka
+eureka:
+  client:
+    #表示是否将自己注册进EurekaServer,默认为true
+    register-with-eureka: true
+    #是否从EurekaServer抓取已有的注册信息，默认为true,单节点无所谓，集群必须设置为true,才能配合ribbon使用负载均衡
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    #避免显示主机名
+    instance-id: bs-pay8001
+    #显示IP地址
+    prefer-ip-address: true
+    #Eureka客户端向服务端发送心跳的时间间隔，单位为秒（默认30秒）
+    lease-renewal-interval-in-seconds: 30
+    #Eureka服务端在收到最后一次心跳后等待时间上线，单位为秒（默认为90秒），超时将剔除服务
+    lease-expiration-duration-in-seconds: 90
+
+## mybatis 整合
+#  mybatis:
+#    mapperLocations: classpath:mapper/*.xml
+#    type-aliases-package: com.wxw.cloud.domain    # 所有的实体别名类所在的包
