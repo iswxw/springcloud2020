@@ -14,6 +14,8 @@
         <module>cloud-server-pay8004</module>
         <module>cloud-server-order8005</module>
         <module>cloud-server-order8003</module>
+        <module>cloud-consul-pay8006</module>
+        <module>cloud-consul-order8005</module>
     </modules>
     <packaging>pom</packaging>
 
