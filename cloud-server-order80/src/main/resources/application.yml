@@ -1,5 +1,5 @@
 server:
-  port: 8002
+  port: 80
 
 spring:
   application:
@@ -12,10 +12,13 @@ eureka:
     #是否从EurekaServer抓取已有的注册信息，默认为true,单节点无所谓，集群必须设置为true,才能配合ribbon使用负载均衡
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:7001/eureka
+      #单击版
+      #defaultZone: http://localhost:7001/eureka
+      #集群
+     defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
   instance:
     #避免显示主机名
-    instance-id: bs-order8001
+    instance-id: bs-order80
     #显示IP地址
     prefer-ip-address: true
 
