@@ -1,0 +1,21 @@
+server:
+  port: 80
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka, http://eureka7002.com:7002/eureka
+
+#超时控制
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+
+# 开启日志
+logging:
+  level:
+    # fegin日志以什么级别监控那个接口
+    com.wxw.cloud.rpc.PaymentFeignService: debug

@@ -17,6 +17,8 @@
         <module>cloud-consul-order8005</module>
         <module>cloud-server-eureka7002</module>
         <module>cloud-server-pay8002</module>
+        <module>cloud-feign-order80</module>
+        <module>cloud-hystrix-pay8001</module>
     </modules>
     <packaging>pom</packaging>
 
