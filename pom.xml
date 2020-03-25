@@ -19,6 +19,8 @@
         <module>cloud-server-pay8002</module>
         <module>cloud-feign-order80</module>
         <module>cloud-hystrix-pay8001</module>
+        <module>cloud-hystrix-order80</module>
+        <module>cloud-hystrix-dashboard9001</module>
     </modules>
     <packaging>pom</packaging>
 
