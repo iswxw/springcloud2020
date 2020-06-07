@@ -8,7 +8,7 @@
   <version>1.0-SNAPSHOT</version>
     <modules>
         <module>cloud-server-pay8001</module>
-        <module>cloud-server-order80</module>
+        <module>cloud-server-order8002</module>
         <module>cloud-server-common</module>
         <module>cloud-server-eureka7001</module>
         <module>cloud-server-pay8004</module>
@@ -22,6 +22,8 @@
         <module>cloud-hystrix-order80</module>
         <module>cloud-hystrix-dashboard9001</module>
         <module>cloud-gateway-server9527</module>
+        <module>cloud-config-server1000</module>
+        <module>cloud-config-client1001</module>
     </modules>
     <packaging>pom</packaging>
 
