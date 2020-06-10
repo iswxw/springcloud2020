@@ -24,6 +24,7 @@
         <module>cloud-gateway-server9527</module>
         <module>cloud-config-server1000</module>
         <module>cloud-config-client1001</module>
+        <module>cloud-bus-client1002</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -9,7 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-config-server1000</artifactId>
+    <groupId>com.wxw</groupId>
+    <artifactId>cloud-bus-client1002</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <dependencies>
         <!--bus 添加 消息总线 rubbitmq的支持-->
@@ -17,9 +19,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
+        <!--config 配置中心-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
         <!--eureka 客户端-->
         <dependency>
@@ -30,7 +33,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <!--图形化监控，能被别人监控到-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -43,4 +46,5 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
 </project>

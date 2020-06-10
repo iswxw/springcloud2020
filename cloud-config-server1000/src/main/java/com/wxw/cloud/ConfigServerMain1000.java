@@ -11,7 +11,6 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * @ Description：总线控制服务端
  * @ Version:   v_0.0.1
  */
-@EnableDiscoveryClient
 @SpringBootApplication
 @EnableConfigServer
 public class ConfigServerMain1000 {

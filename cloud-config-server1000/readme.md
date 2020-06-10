@@ -2,7 +2,7 @@
 
 ---
 
-开启应用设计模块:
+#### 一、开启应用设计模块:
 
 - cloud-config-client1001
 - cloud-config-server1000
@@ -68,6 +68,37 @@
 - 每个微服务客户端都要执行一次 post请求？---for循环好么
 - 可否广播，一次通知，处处生效？
 - 如果想大范围的自动刷新，或精确更新还有什么方法
+
+#### 二、bus 总线是直接在config基础上的拓展      
+
+- http://localhost:1002/configinfo
+- http://localhost:1001/configInfo
+- http://localhost:1000/master/config-dev.yml
+
+> Bus是一处修改，处处生效 （支持 kafka和rubbitMQ）
+
+1. 发送post给客户端，链式生效（不满足单一职责原则）
+2. 发送给服务总线，处处生效（推荐）
+
+- 修改github 配置版本号
+- 给服务端发送post请求，会处处生效
+
+```scss
+ curl -X POST "http://localhost:1000/actuator/bus-refresh"
+```
+
+##### （1） bus顶点通知
+
+
+
+
+
+
+
+
+
+
+
 
 
 

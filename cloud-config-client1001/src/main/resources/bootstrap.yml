@@ -11,7 +11,13 @@ spring:
       name: config                #  配置文件名称
       profile: dev                # 读取后缀名称 上述三个综合：master分支上config-dev.yml的配置文件被读取：master/config-dev.yml
       uri: http://localhost:1000  #配置中心地址
-
+  # rubbitmq的相关支持
+  rabbitmq:
+    host: wxw.plus
+    port: 5672
+    username: wxw
+    password: wxw
+    virtual-host: /wxw
 
 # 暴露监控端点
 management:
