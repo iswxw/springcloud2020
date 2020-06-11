@@ -89,6 +89,9 @@
 
 ##### （1） bus顶点通知
 
+- https://www.bilibili.com/video/BV18E411x7eT?p=82
+- ​
+
 
 
 
