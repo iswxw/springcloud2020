@@ -22,7 +22,8 @@ public class Order80Controller {
 
     //public static final String PAYMENT_URL = "http://localhost:8001";
 
-    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+    // zipkin
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-RPC";
 
     @Resource
     private RestTemplate restTemplate;
@@ -53,5 +54,16 @@ public class Order80Controller {
             return new Result(444,"操作失败");
         }
     }
+
+    // ====================> zipkin+sleuth
+    @GetMapping("/consumer/payment/zipkin")
+    public String paymentZipkin()
+    {
+       // String result = restTemplate.getForObject("http://localhost:8001"+"/payment/zipkin/", String.class);
+        String result = restTemplate.getForObject(PAYMENT_URL+"/payment/zipkin/", String.class);
+        return result;
+    }
+
+
 
 }

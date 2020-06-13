@@ -11,12 +11,12 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
  * @create: 2020-03-20-0:45
  * RibbonClient  启动自定义的负载均衡机制
  */
-@RibbonClient(name = "CLOUD-PAYMENT-SERVICE",configuration = RuleConfig.class)
+@RibbonClient(name = "CLOUD-PAYMENT-RPC",configuration = RuleConfig.class)
 @EnableEurekaClient
 @SpringBootApplication
-public class OrderMain {
+public class OrderMain80 {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderMain.class, args);
+        SpringApplication.run(OrderMain80.class, args);
     }
 }

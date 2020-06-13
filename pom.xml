@@ -7,12 +7,12 @@
   <artifactId>springcloud2020</artifactId>
   <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>cloud-server-pay8001</module>
-        <module>cloud-server-order8002</module>
+        <module>cloud-server-zipkin-pay8001</module>
+        <module>cloud-server-zipkin-order80</module>
         <module>cloud-server-common</module>
         <module>cloud-server-eureka7001</module>
-        <module>cloud-server-pay8004</module>
-        <module>cloud-server-order8003</module>
+        <module>cloud-serverzk-pay8004</module>
+        <module>cloud-serverzk-order8003</module>
         <module>cloud-consul-pay8006</module>
         <module>cloud-consul-order8005</module>
         <module>cloud-server-eureka7002</module>
