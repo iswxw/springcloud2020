@@ -26,6 +26,7 @@
         <module>cloud-config-client1001</module>
         <module>cloud-bus-client1002</module>
         <module>cloud-stream</module>
+        <module>cloud-alibaba</module>
     </modules>
     <packaging>pom</packaging>
 
