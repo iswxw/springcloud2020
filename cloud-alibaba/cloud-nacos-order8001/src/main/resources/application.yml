@@ -7,7 +7,8 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
+        #server-addr: localhost:8848 #配置Nacos地址
+        server-addr: wxw.plus:8848 #配置Nacos地址
 
 # 消费者将要去访问的微服务名称（注册成功进nacos微服务提供者）
 service-url:
