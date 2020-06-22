@@ -6,13 +6,13 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @Author: wxw
- * @create: 2020-06-22-22:22
+ * @create: 2020-06-22-23:55
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ProviderMain9004 {
+public class ProviderPayMain9004 {
     public static void main(String[] args) {
-        SpringApplication.run(ProviderMain9004.class, args);
+        SpringApplication.run(ProviderPayMain9004.class, args);
     }
 
 }

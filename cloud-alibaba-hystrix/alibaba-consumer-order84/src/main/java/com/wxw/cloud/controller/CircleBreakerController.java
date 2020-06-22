@@ -22,8 +22,11 @@ public class CircleBreakerController {
     @Resource
     private RestTemplate restTemplate;
 
-   
-    
+    /**
+     *  http://localhost:84/consumer/fallback/1
+     * @param id
+     * @return
+     */
     @RequestMapping("/consumer/fallback/{id}")
     //@SentinelResource(value = "fallback") //没有配置
     //@SentinelResource(value = "fallback",fallback = "handlerFallback") //fallback只负责业务异常
