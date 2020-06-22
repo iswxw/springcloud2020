@@ -27,6 +27,7 @@
         <module>cloud-bus-client1002</module>
         <module>cloud-stream</module>
         <module>cloud-alibaba</module>
+        <module>cloud-alibaba-hystrix</module>
     </modules>
     <packaging>pom</packaging>
 

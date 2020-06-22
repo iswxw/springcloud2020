@@ -1,5 +1,6 @@
 package com.wxw.cloud.result;
 
+import com.wxw.cloud.domain.Payment;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,6 +22,12 @@ public class Result<T extends Serializable> implements Serializable {
     private Integer code;
     private String message;
     private T data;
+
+    public Result(int code, String message, T payment) {
+         this.code =code;
+         this.message =message;
+         this.data =payment;
+    }
 
     /**
      * 判断是否成功
