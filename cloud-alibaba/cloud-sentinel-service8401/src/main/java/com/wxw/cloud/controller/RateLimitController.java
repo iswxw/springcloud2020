@@ -29,7 +29,11 @@ public class RateLimitController {
         return new Result(444,exception.getClass().getCanonicalName()+"\t 服务不可用");
     }
 
-    // 默认异常处理 按url路径配置
+    /**
+     * http://localhost:8401/rateLimit/byUrl
+     * 默认异常处理 按url路径配置
+     * @return
+     */
     @GetMapping("/rateLimit/byUrl")
     @SentinelResource(value = "byUrl1")
     public Result byUrl() {
