@@ -1,8 +1,7 @@
-package com.wxw.cloud.rpc.exception;
+package com.wxw.cloud.service.exception;
 
-import com.wxw.cloud.rpc.PayHystrixRPC;
+import com.wxw.cloud.service.PayHystrixRPC;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 /**
  * @Author: wxw

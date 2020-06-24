@@ -10,14 +10,30 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.wxw.hystrix</groupId>
-    <artifactId>alibaba-provider-payment9003</artifactId>
+    <artifactId>alibaba-consumer-order83</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
+        <!--SpringCloud openfeign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
         <!--SpringCloud ailibaba nacos -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--SpringCloud ailibaba sentinel -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>jackson-dataformat-xml</artifactId>
+                    <groupId>com.fasterxml.jackson.dataformat</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- 引入自己定义的api通用包，可以使用Payment支付Entity -->
         <dependency>
@@ -53,6 +69,5 @@
         </dependency>
 
     </dependencies>
-
 
 </project>

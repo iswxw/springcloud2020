@@ -2,7 +2,7 @@ package com.wxw.cloud.controller;
 
 import com.wxw.cloud.domain.Person;
 import com.wxw.cloud.result.Result;
-import com.wxw.cloud.rpc.PaymentFeignService;
+import com.wxw.cloud.service.PaymentFeignService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

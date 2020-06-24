@@ -19,9 +19,9 @@ public class CircleBreakerController {
    
     public static final String SERVICE_URL = "http://nacos-payment-provider";
 
+
     @Resource
     private RestTemplate restTemplate;
-
     /**
      *  http://localhost:84/consumer/fallback/1
      * @param id
@@ -44,19 +44,18 @@ public class CircleBreakerController {
 
         return result;
     }
-  
+
     //fallback
     public Result handlerFallback(@PathVariable  Long id, Throwable e) {
         Payment payment = new Payment(id,"null");
         return new Result<>(444,"兜底异常handlerFallback,exception内容  "+e.getMessage(),payment);
     }
-  
+
     //blockHandler
     public Result blockHandler(@PathVariable  Long id, BlockException blockException) {
         Payment payment = new Payment(id,"null");
         return new Result<>(445,"blockHandler-sentinel限流,无此流水: blockException  "+blockException.getMessage(),payment);
     }
-
 
 }
  

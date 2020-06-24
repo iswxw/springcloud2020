@@ -1,4 +1,4 @@
-package com.wxw.cloud.rpc;
+package com.wxw.cloud.service;
 
 import com.wxw.cloud.domain.Person;
 import com.wxw.cloud.result.Result;

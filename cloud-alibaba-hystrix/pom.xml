@@ -16,8 +16,8 @@
     <modules>
         <module>alibaba-prvider-payment9004</module>
         <module>alibaba-consumer-order84</module>
-        <module>alibaba-prvider-payment9003</module>
         <module>alibaba-provider-payment9003</module>
+        <module>alibaba-consumer-order83</module>
     </modules>
 
 

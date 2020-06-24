@@ -1,6 +1,6 @@
-package com.wxw.cloud.rpc;
+package com.wxw.cloud.service;
 
-import com.wxw.cloud.rpc.exception.PayHystrixRPCException;
+import com.wxw.cloud.service.exception.PayHystrixRPCException;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
