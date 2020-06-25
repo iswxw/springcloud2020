@@ -28,6 +28,7 @@
         <module>cloud-stream</module>
         <module>cloud-alibaba</module>
         <module>cloud-alibaba-hystrix</module>
+        <module>cloud-alibaba-seata</module>
     </modules>
     <packaging>pom</packaging>
 
