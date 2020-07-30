@@ -22,6 +22,13 @@ public class PaymentController {
     @Value("${server.port}")
     private String serverPort;
 
+    //====================网关测试=========================
+    @GetMapping("gateway")
+    public String gateWay(){
+        return "网关端口："+serverPort;
+    }
+
+    // ==============熔断降级测试========================
     @GetMapping("/payment/hystrix/ok/{id}")
     public String paymentInfo_OK(@PathVariable("id") Integer id){
         String result = payMentService.paymentInfo_OK(id);
