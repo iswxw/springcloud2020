@@ -64,6 +64,12 @@ public class Order80Controller {
         return result;
     }
 
-
+    // feign 的失败后默认方法
+    // fegin 调用失败后 返回原因
+    @GetMapping(value = "/payment/histrix-fallback")
+    public String fallback(){
+        int a = 1 / 0; // 制造异常
+        return PAYMENT_URL;
+    }
 
 }

@@ -3,19 +3,19 @@ server:
 
 spring:
   application:
-    name: cloud-payment-service  #服务名称
+    name: cloud-server-pay  #服务名称
   zipkin:
     base-url: http://localhost:9411
     sleuth:
       sampler:
         # 采样率值 介于0-1之间，则表示全部采集
       probability: 1
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/bscloud?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: 123456
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: org.gjt.mm.mysql.Driver
+#    url: jdbc:mysql://localhost:3306/bscloud?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: 123456
 
 #eureka
 eureka:
@@ -26,12 +26,12 @@ eureka:
     fetch-registry: true
     service-url:
       # 单机版
-      #defaultZone: http://localhost:7001/eureka
+#      defaultZone: http://localhost:7001/eureka
       #集群版
      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
   instance:
     #避免显示主机名
-    instance-id: bs-pay8001
+    instance-id: cloud-server-pay8001
     #显示IP地址
     prefer-ip-address: true
     #Eureka客户端向服务端发送心跳的时间间隔，单位为秒（默认30秒）

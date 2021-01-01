@@ -20,17 +20,27 @@ public class OrderFeignController {
     @Resource
     private PaymentFeignService paymentFeignService;
 
+    /**
+     * 普通调用
+     * @return
+     */
     @GetMapping("/consumer/payment")
     public Result<Person> getTestObject(){
         return paymentFeignService.getTestObject();
     }
-   // 超时控制
+    // 超时控制
     @GetMapping(value = "/consumer/payment/feign/timeout")
     public String paymentFeignTimeout(){
+        log.info("超时控制：/consumer/payment/feign/timeout ===>{}","测试中...");
         // 客户端默认等待1秒钟
         return paymentFeignService.paymentFeignTimeout();
     }
 
-
-
+    // 调用异常后走默认方法
+    // 调用异常后返回异常原因
+    @GetMapping(value = "/consumer/payment/histrix-fallback")
+    public String fallback(){
+        // 客户端默认等待1秒钟
+        return paymentFeignService.fallback();
+    }
 }

@@ -10,8 +10,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @EnableFeignClients
 @SpringBootApplication
-public class OrderFeignMain {
+public class OrderFeignMain9001 {
     public static void main(String[] args) {
-        SpringApplication.run(OrderFeignMain.class,args);
+        SpringApplication.run(OrderFeignMain9001.class,args);
     }
 }

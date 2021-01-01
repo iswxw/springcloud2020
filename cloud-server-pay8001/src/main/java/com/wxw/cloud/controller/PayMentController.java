@@ -34,7 +34,7 @@ public class PayMentController {
     public String discoveryTest(){
         List<String> services = discoveryClient.getServices();
         services.forEach(application -> log.info("应用信息=>{}",application));
-        List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-ORDER-SERVICE");
+        List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-FEIGN-ORDER9001");
         instances.forEach(instance -> log.info("服务实例=>{}", instance));
         Result result = new Result();
         result.setMessage(serverPort);
@@ -64,7 +64,7 @@ public class PayMentController {
         return serverPort;
     }
 
-    // 给Rest 提供调用
+    // 给 Rest 提供调用
     @GetMapping("/payment/get/{id}")
     public Result<Person>  getPayment(@PathVariable("id")Long id){
         Person person = new Person(1, "魏永杰", 18, "测试RestTemplate的getForObject方法");
@@ -80,4 +80,11 @@ public class PayMentController {
         return "hi ,i'am paymentzipkin server fall back，welcome to atguigu，O(∩_∩)O哈哈~";
     }
 
+    // feign 的失败后默认方法
+    // fegin 调用失败后 返回原因
+    @GetMapping(value = "/payment/histrix-fallback")
+    public String fallback(){
+        int a = 1 / 0; // 制造异常
+        return serverPort;
+    }
 }
