@@ -13,6 +13,7 @@
 - [【项目实战 Spring Cloud sleuth】]()  分布式请求链路跟踪
 -  [【项目实战 Spring Cloud stream】]()  消息驱动 ，屏蔽底层 mq实现方式，统一消息编程模型 ，解决重复消费（使用消息分组解决）和持久化问题
 - [【项目实战 Spring Cloud  bus】]()  服务配置总线
+- [【项目实战 Spring Cloud  config】]()  服务集群配置中心 
 
 ### 服务注册与发现
 
