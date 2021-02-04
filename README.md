@@ -18,8 +18,9 @@
 ### 服务注册与发现
 
 - [【项目实战 Spring Cloud  Zookeeper】]()   
-- [【项目实战 Spring Cloud  consul 】]() 
+- [【项目实战 Spring Cloud  Consul 】]() 
 - [【项目实战 Spring Cloud  Eureka】]()   
+- [【项目实战 Spring Cloud  Nacos】]()   
 
 ### SpringCloud Alibaba系列
 
