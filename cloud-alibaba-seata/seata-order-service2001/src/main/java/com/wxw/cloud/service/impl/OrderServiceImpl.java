@@ -15,8 +15,8 @@ import javax.annotation.Resource;
  * @Author: wxw
  * @create: 2020-06-25-15:27
  */
-@Service
 @Slf4j
+@Service
 public class OrderServiceImpl implements OrderService {
     @Resource
     private OrderDao orderDao;
@@ -26,9 +26,9 @@ public class OrderServiceImpl implements OrderService {
     private AccountService accountService;
 
     /**
+     * @GlobalTransactional TM 事务管理者
      * 创建订单->调用库存服务扣减库存->调用账户服务扣减账户余额->修改订单状态
      */
-
     @Override
     @GlobalTransactional(name = "fsp-create-order",rollbackFor = Exception.class)
     public void create(Order order){

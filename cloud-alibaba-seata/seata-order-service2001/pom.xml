@@ -34,6 +34,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--版本最好和server 保持一致-->
         <dependency>
             <groupId>io.seata</groupId>
             <artifactId>seata-spring-boot-starter</artifactId>
